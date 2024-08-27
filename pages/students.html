@@ -78,8 +78,101 @@
                 </div>
             </form>
             <div class="d-flex justify-content-end col-3">
-                <button class="primary-btn">Créer un étudiant <i class="hgi-stroke hgi-add-circle"></i></button>
+                <button type="button" class="primary-btn border-0" data-bs-toggle="modal" data-bs-target="#studentModal" >Créer un étudiant <i class="hgi-stroke hgi-add-circle"></i></button>
             </div>
+        </div>
+         <!-- Modal -->
+        <div class="modal fade" id="studentModal" tabindex="-1" aria-labelledby="studentModalLabel" aria-hidden="true">
+        <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal-dialog modal-lg modal-md modal-dialog-centered">
+            <div class="modal-content border-0 rounded-3">
+              <div class="modal-header d-flex flex-column border border-0 rounded-3">
+                <h1 class="modal-title fs-5" id="studentModalLabel">
+                  Créer un étudiant
+                </h1>
+                <div class="modal-body w-100">
+                    <form action="" id="new-student">
+                        <div class="row">
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                            <span class="input-group-text px-3 border-0" id="lastname"><i class="hgi-stroke hgi-user fs-5"></i></span>
+                            <input type="text" class="form-control border-0 input-area" placeholder="Nom" aria-label="nom" aria-describedby="lastname">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text px-3 border-0" id="firstname"><i class="hgi-stroke hgi-user fs-5"></i></span>
+                                <input type="text" class="form-control border-0 input-area" placeholder="Prénom" aria-label="noprenom" aria-describedby="firstname">
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row py-3">
+                        <!-- Téléchargement de photo -->
+                        <div class="col">
+                            <!--div class="input-group mb-3">
+                                <label class="input-group-text" for="inputGroupFile01"><i class="hgi-stroke hgi-link-01"></i></label>
+                                <input type="file" class="form-control border-0 input-area" id="inputGroupFile01">
+                            </div-->
+
+                            <div class="input-group flex-nowrap">
+                                <input type="file" accept="image/*" class="form-control input-area border-0" aria-label="Télécharger une photo"/>
+                                <!--i class="hgi-stroke hgi-link-01 position-absolute top-50 start-100"></i-->
+                            </div>
+                        </div>
+
+                        <!-- Sélection du genre -->
+                        <div class="col">
+                            <div class="">
+                            <select class="form-select input-area border-0">
+                                <option value="" disabled selected>Genre</option>
+                                <option value="male">Masculin</option>
+                                <option value="female">Féminin</option>
+                            </select>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text px-3 border-0" id="dateOfBirth"><i class="hgi-stroke hgi-calendar-01"></i></span>
+                                <input type="date" class="form-control border-0 input-area" placeholder="dateOfBirth" aria-label="dateOfBirth" aria-describedby="dateOfBirth">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text px-3 border-0" id="address"><i class="hgi-stroke hgi-home-03 fs-5"></i></span>
+                                <input type="text" class="form-control border-0 input-area" placeholder="Adresse" aria-label="address" aria-describedby="address">
+                            </div>
+                            
+                        </div>
+                        </div>
+                        <div class="row py-3">
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text px-3 border-0" id="email"><i class="hgi-stroke hgi-recovery-mail"></i></span>
+                                <input type="email" class="form-control border-0 input-area" placeholder="Adresse Email" aria-label="email" aria-describedby="email">
+                            </div>
+                            
+                        </div>
+                        <div class="col">
+                            <div class="input-group flex-nowrap">
+                                <span class="input-group-text px-3 border-0" id="telephone"><i class="hgi-stroke hgi-call-02 fs-5"></i></span>
+                                <input type="telephone" class="form-control border-0 input-area" placeholder="Numero téléphone" aria-label="telephone" aria-describedby="telephone">
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </form>
+                </div>
+              </div>
+              <div class="modal-footer d-flex justify-content-center border-0 rounded-3">
+                <button form="new-student" type="submit" class="primary-btn border-0">
+                    <span>Créer un étudiant</span>
+                    <i class="hgi-stroke hgi-add-circle "></i> 
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- //Search Bar & Add Students Button -->
 

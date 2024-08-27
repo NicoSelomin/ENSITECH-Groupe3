@@ -349,3 +349,14 @@ label {
     width: 100%;
   }
 }
+/* create new student */
+.input-area{
+  background-color: var(--color-gray) !important;
+  height: 44px;
+  font-family: var(--font-base);
+  font-size: .75rem;
+}
+.input-bg{
+  background-color: var(--color-gray) !important;
+}
+/* create new student */

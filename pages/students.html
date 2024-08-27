@@ -92,19 +92,7 @@
                         <th scope="col">Nom</th>
                         <th scope="col">Prénom</th>
                         <th scope="col">Date d'inscription</th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Associer un cours</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
-                                </ul>
-                            </div>
-                        </th>
+                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -121,7 +109,7 @@
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                   <li><a class="dropdown-item" href="#">Modifier</a></li>
                                   <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Associer un cours</a></li>
+                                  <li><a class="dropdown-item" href="#" data-bs-toggle="modal"                                  data-bs-target="#courseModal">Associer un cours</a></li>
                                   <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
@@ -262,7 +250,149 @@
                     </tr>
                     
                 </tbody>
+                
+                 
             </table>
+<!-- modal associate course student-->
+            <div
+      class="modal fade"
+      id="courseModal"
+      tabindex="-1"
+      aria-labelledby="courseModalLabel"
+      aria-hidden="true"
+    >
+      <button
+        type="button"
+        class="btn-close float-end"
+        data-bs-dismiss="modal"
+        aria-label="Close"
+      ></button>
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content border-0 outline-0 rounded-3">
+          <div class="modal-header flex-column border border-0 rounded-3 pt-2">
+            <h1 class="modal-title fs-5" id="courseModalLabel">
+              Associer un cours à un étudiant
+            </h1>
+            <!-- champs rechercher  -->
+            <div class="input-group flex-nowrap search-wrapper">
+              <span class="input-group-text border-0 search-bg" id="searchBar">
+                <i class="hgi-stroke hgi-search-01 fs-5"></i>
+              </span>
+              <input
+                type="text"
+                class="form-control border-0 search-bg ps-5"
+                placeholder="Rechercher..."
+                aria-label="Username"
+                aria-describedby="searchBar"
+              />
+            </div>
+          </div>
+          <div class="modal-body justify-content-center">
+            <table class="p-1 table modal-table">
+              <thead></thead>
+              <tbody>
+                <tr>
+                  <td class="col">
+                    <!--i class="hgi-stroke hgi-border-all-02"></i-->
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Introduction à l'Informatique</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Algorithmique et Programmation</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Développement d'Applications</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline">Big Data et Analytique</span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Réseaux de Neurones et Deep Learning</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Introduction à l'Informatique</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Algorithmique et Programmation</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Introduction à l'Informatique</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Algorithmique et Programmation</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Introduction à l'Informatique</span
+                    >
+                  </td>
+                </tr>
+                <tr>
+                  <td class="col">
+                    <input type="checkbox" name="" id="" />
+                    <span class="ms-5 d-inline"
+                      >Algorithmique et Programmation</span
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div
+            class="modal-footer d-flex justify-content-center align-self-top border border-0 rounded-3"
+          >
+            <button type="button" class="primary-btn border-0">
+              <span>Valider l'association</span>
+              <i class="hgi-stroke hgi-link-01"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
                 <p>390 résultats</p>
                 <nav aria-label="Page navigation">

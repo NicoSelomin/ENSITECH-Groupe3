@@ -276,6 +276,11 @@ label {
   font-weight: 600;
   font-size: 1.3rem;
 }
+
+.btn-close-cadre {
+  position: absolute;
+  right: 20px;
+}
 /*tableau*/
 .modal-table {
   background-color: var(--color-body);
@@ -350,13 +355,13 @@ label {
   }
 }
 /* create new student */
-.input-area{
+.input-area {
   background-color: var(--color-gray) !important;
   height: 44px;
   font-family: var(--font-base);
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
-.input-bg{
+.input-bg {
   background-color: var(--color-gray) !important;
 }
 /* create new student */

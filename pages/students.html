@@ -354,18 +354,20 @@
       aria-labelledby="courseModalLabel"
       aria-hidden="true"
     >
-      <button
-        type="button"
-        class="btn-close float-end"
-        data-bs-dismiss="modal"
-        aria-label="Close"
-      ></button>
+     
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content border-0 outline-0 rounded-3">
           <div class="modal-header flex-column border border-0 rounded-3 pt-2">
             <h1 class="modal-title fs-5" id="courseModalLabel">
               Associer un cours à un étudiant
             </h1>
+            <button
+            type="button"
+            class="btn-close btn-close-cadre"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+
             <!-- champs rechercher  -->
             <div class="input-group flex-nowrap search-wrapper">
               <span class="input-group-text border-0 search-bg" id="searchBar">
@@ -381,6 +383,7 @@
             </div>
           </div>
           <div class="modal-body justify-content-center">
+            <form action="" id="associate-course-student">
             <table class="p-1 table modal-table">
               <thead></thead>
               <tbody>
@@ -473,11 +476,12 @@
                 </tr>
               </tbody>
             </table>
+          </form>
           </div>
           <div
             class="modal-footer d-flex justify-content-center align-self-top border border-0 rounded-3"
           >
-            <button type="button" class="primary-btn border-0">
+            <button form="associate-course-student" type="submit" class="primary-btn border-0">
               <span>Valider l'association</span>
               <i class="hgi-stroke hgi-link-01"></i>
             </button>

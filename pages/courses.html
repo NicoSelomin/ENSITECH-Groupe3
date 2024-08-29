@@ -39,7 +39,8 @@
                     <a class="nav-link" href="#"><i class="hgi-stroke hgi-teaching"></i> Gestion enseignant</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link actived" href="courses.html"><i class="hgi-stroke hgi-course"></i> Gestion cours</a>
+                    <a class="nav-link actived" href="courses.html"><i class="hgi-stroke hgi-course"></i> Gestion
+                        cours</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="hgi-stroke hgi-analysis-text-link"></i> Rapports</a>
@@ -79,52 +80,61 @@
             </form>
             <!-- Aboubakar task - create a course -->
             <div class="d-flex justify-content-end col-3">
-                <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#courseModal">Créer un cours <i class="hgi-stroke hgi-add-circle"></i></button>
+                <button class="primary-btn" data-bs-toggle="modal" data-bs-target="#courseModal">Créer un cours <i
+                        class="hgi-stroke hgi-add-circle"></i></button>
             </div>
             <!-- Create course modal -->
-            <div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+            <div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-        <div class="modal-header d-flex flex-column">
-            <h1 class="modal-title fs-5" id="courseModalLabel">Créer un cours</h1>
-            <button type="button" class="btn-close btn-close-cadre" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <form>
-            <div class="modal-body">
-                <div class="row mb-3">
-                    <div class="col">
-                        <!-- inclure le input group -->
-                        <div class="input-group flex-nowrap ">
-                            <span class="input-group-text" id="addon-wrapping"><i class="hgi-stroke hgi-label"></i></span>
-                            <input type="text" class="form-control ps-5 border-0" placeholder="Thème" aria-label="Theme" aria-describedby="addon-wrapping">
+                        <div class="modal-header d-flex flex-column">
+                            <h1 class="modal-title fs-5" id="courseModalLabel">Créer un cours</h1>
+                            <button type="button" class="btn-close btn-close-cadre" data-bs-dismiss="modal"
+                                aria-label="Close"></button>
                         </div>
-                        <!-- fin -inclure le input group --> 
+                        <form>
+                            <div class="modal-body">
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <!-- inclure le input group -->
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping"><i
+                                                    class="hgi-stroke hgi-label"></i></span>
+                                            <input type="text" class="form-control ps-5 create-courses"
+                                                placeholder="Thème" aria-label="Theme"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+                                        <!-- fin -inclure le input group -->
+                                    </div>
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col">
+                                        <!-- inclure le input group -->
+
+                                        <div class="input-group flex-nowrap ">
+                                            <span class="input-group-text" id="addon-wrapping"> <i
+                                                    class="hgi-stroke hgi-time-03"></i></span>
+                                            <input type="text" class="form-control ps-5 create-courses"
+                                                placeholder="Nombre d'heures" aria-label="Nombredheures"
+                                                aria-describedby="addon-wrapping">
+                                        </div>
+
+                                        <!-- fin -inclure le input group -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex align-items-center justify-content-center">
+                                <button type="submit" class="primary-btn">
+                                    Créer un cours
+                                    <i class="hgi-stroke hgi-add-circle"></i>
+                                </button>
+
+                            </div>
+                        </form>
+                        <!-- Aboubakar task - create a course -->
                     </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col">
-                    <!-- inclure le input group -->
-                    
-                  <div class="input-group flex-nowrap ">
-                      <span class="input-group-text" id="addon-wrapping"> <i class="hgi-stroke hgi-time-03"></i></span>
-                      <input type="text" class="form-control ps-5 border-0" placeholder="Nombre d'heures" aria-label="Nombredheures" aria-describedby="addon-wrapping">
-                    </div>
-                    
-                    <!-- fin -inclure le input group -->
                 </div>
-            </div>
-        </div>
-        <div class="modal-footer d-flex align-items-center justify-content-center">
-            <button type="submit" class="primary-btn">
-            Créer un cours
-            <i class="hgi-stroke hgi-add-circle"></i>
-        </button>
-        
-    </div>
-</form>
-<!-- Aboubakar task - create a course -->
-</div>
-    </div>
             </div>
         </div>
         <!-- //Search Bar & Add Course Button -->
@@ -134,22 +144,12 @@
             <table class="table border table-hover">
                 <thead class="table-primary">
                     <tr>
-                        <th scope="col"><input type="checkbox" name="check-all" id="select-all" class="form-check-input"></th>
+                        <th scope="col"><input type="checkbox" name="check-all" id="select-all"
+                                class="form-check-input"></th>
                         <th scope="col">Id</th>
                         <th scope="col">Thème</th>
                         <th scope="col">Nombre d'heures</th>
-                        <th scope="col">
-                            <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-white" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
-                                </ul>
-                            </div>
-                        </th>
+                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -160,16 +160,18 @@
                         <td>20h15min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -178,16 +180,18 @@
                         <td>12h30min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -196,16 +200,18 @@
                         <td>15h45min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -214,16 +220,18 @@
                         <td>8h</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -232,34 +240,18 @@
                         <td>25h30min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
-                    </tr> 
-                    <tr>
-                        <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
-                        <td>I1AR05</td>
-                        <td>Algorithmique 1</td>
-                        <td>25h30min</td>
-                        <td>
-                            <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
-                                </ul>
-                            </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -268,16 +260,18 @@
                         <td>25h30min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -286,16 +280,18 @@
                         <td>25h30min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -304,16 +300,18 @@
                         <td>25h30min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
+                            </i>
+                        </td>
                     </tr>
                     <tr>
                         <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
@@ -322,17 +320,39 @@
                         <td>25h30min</td>
                         <td>
                             <div class="dropdown">
-                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="hgi-stroke hgi-more-vertical"></i>
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                  <li><a class="dropdown-item" href="#">Modifier</a></li>
-                                  <li><a class="dropdown-item" href="#">Voir les informations</a></li>
-                                  <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
                                 </ul>
                             </div>
-                        </i></td>
-                    </tr>  
+                            </i>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="check-all" class="form-check-input row-checkbox"></td>
+                        <td>I1AR05</td>
+                        <td>Algorithmique 1</td>
+                        <td>25h30min</td>
+                        <td>
+                            <div class="dropdown">
+                                <a href="#" class="text-decoration-none text-black" id="dropdownMenuButton"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="hgi-stroke hgi-more-vertical"></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a class="dropdown-item" href="#">Modifier</a></li>
+                                    <li><a class="dropdown-item" href="#">Voir les informations</a></li>
+                                    <li><a class="dropdown-item" href="#">Supprimer</a></li>
+                                </ul>
+                            </div>
+                            </i>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
@@ -362,7 +382,9 @@
         <!-- //Students list table-->
     </main>
     <!-- //MAIN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
     <script src="../assets/js/main.js"></script>
 </body>
 

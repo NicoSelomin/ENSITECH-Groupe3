@@ -366,3 +366,25 @@ label {
   background-color: var(--color-gray) !important;
 }
 /* create new student */
+
+/*View infomation student */
+.student-picture img {
+  width: 127px;
+  height: 127px;
+  /* /border-radius: 100%; */
+  }
+
+.stutent-list-info li {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-bottom: 8px;
+
+
+  }
+
+.stutent-list-info li span {
+  font-weight: 500;
+ 
+
+}

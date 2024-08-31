@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ENSITECH</title>
+    <title>Connexion</title>
+
+    <!-- HUGE ICON -->
+    <link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <!--header-->
-    <header></header>
-    <!--content-->
     <main>
-        <h1>Bienvenue à ENSITECH ♥♥</h1>
+        <!-- Form Container -->
+        <div class="form-container">
+            <div class="left">
+                <h1 class="title-login">Connexion</h1>
+                <form class="formulaire" id="loginForm">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="hgi-stroke hgi-user"></i></span>
+                        <input type="text" class="form-control" aria-label="identifiant"
+                            aria-describedby="addon-wrapping" placeholder="Votre identifiant">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="addon-wrapping">
+                            <i class="hgi-stroke hgi-lock-password"></i></span>
+                        <input type="text" class="form-control" aria-label="Mot de passe"
+                            aria-describedby="addon-wrapping" placeholder="Votre mot de passe">
+                    </div>
+
+                    <a href="pages/dashboard.html"
+                        class="submit-btn d-flex justify-content-center align-items-center">Connexion</a>
+                </form>
+            </div>
+            <div class="right">
+                <img src="assets/images/logo-white.svg" alt="logo ensitech">
+            </div>
+        </div>
+
     </main>
-    <!--footer-->
-    <footer></footer>
 </body>
+
 </html>
